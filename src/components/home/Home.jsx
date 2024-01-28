@@ -1,12 +1,16 @@
 import React from 'react';
-import Header  from '../header/Header';
+import Header from '../header/Header';
+import { Container } from '../componentStyled';
 
 const Home = () => {
-    return (
-        <>
-<Header/>
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Container>
+
+      </Container>
+    </>
+  );
 };
 
 export default Home;

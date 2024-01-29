@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export const Container = styled.div`
     max-width: 1200px;
     margin: 0 auto;
-    //border: 1px solid red;
     height: 100dvh;
 `;
 /*Header*/
@@ -18,7 +17,7 @@ export const Title = styled.h1`
     font-size: 25px;
     text-align: center;
     margin-bottom: 25px;
-    color: wheat;
+    color: #8F868B;
 
     & b {
         color: #267cb5;
@@ -40,7 +39,11 @@ export const Icon = styled.img`
         transform: rotate(90deg);
     }
 `;
-export const Logo = styled.div``;
+export const Logo = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+`;
 export const StyledLink = styled(Link)`
     text-decoration: none;
 `;
@@ -51,11 +54,20 @@ export const InnerHeader = styled.div`
 `;
 
 export const BoxButton = styled.div`
-    width: 150px;
+    width: 200px;
     filter: drop-shadow(3px 3px 10px #1976d2);
 `;
 export const NavBox = styled.div`
-    display: flex;
-    justify-content: flex-end;
+    width: 100%;
+   margin-top: 20px;
     
 `;
+export const InnerNavHeader = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+`;
+
+

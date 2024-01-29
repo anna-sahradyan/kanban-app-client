@@ -5,7 +5,7 @@ export const SidebarContainer = styled.div`
     margin: 0 auto;
     padding: 0 20px;
     color: white;
-   
+    border: 1px solid red;
 `;
 
 export const SidebarSection = styled.div`
@@ -16,8 +16,9 @@ export const SidebarSection = styled.div`
     height: 100dvh;
     flex-shrink: 0;
     overflow: auto;
-    color:#C8C8C8 ;
+    color: #C8C8C8;
     transition: all 0.5s;
+
 
 `;
 export const TopSection = styled.div`
@@ -25,12 +26,12 @@ export const TopSection = styled.div`
     align-items: center;
     padding: 10px 15px;
     transition: all 0.5s;
-    background-color: $accent;
     height: 70px;
+    
 
 `;
 export const Logo = styled.div`
-  
+
 
 `;
 
@@ -38,14 +39,25 @@ export const Bars = styled.div`
     display: flex;
     font-size: 25px;
     cursor: pointer;
-    color: $bg-color;
     transition: all 0.3s;
+`;
+export const Main = styled.div`
+
+`;
+export const Title = styled.h3`
+    display: flex;
+    justify-content: center;
+`;
+/*SidebarItem*/
+
+export const SidebarItemBox = styled.div`
+   
 `;
 
 /*Layout*/
 export const LayoutContainer = styled.div`
     min-height: 80dvh;
     display: flex;
-    
-   
+    background-color: #E0DBDF;
+    filter: drop-shadow(3px 3px 10px #1976d2);
 `;

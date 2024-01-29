@@ -3,7 +3,7 @@ import { Bars, Logo, Main, SidebarContainer, SidebarItemBox, SidebarSection, Tit
 import { useNavigate } from 'react-router';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import CottageOutlinedIcon from '@mui/icons-material/CottageOutlined';
-import menu from '../../data/sidebar';
+import menu from "./data/sidebar"
 import SidebarItems from './SidebarItems';
 
 const Sidebar = ({ children }) => {
@@ -30,11 +30,10 @@ const Sidebar = ({ children }) => {
         </TopSection>
         <Title>All Boards</Title>
         <SidebarItemBox>
-
+          {menu.map((item, index) => {
+            return <SidebarItems key={index} item={item} isOpen={isOpen} />;
+          })}
         </SidebarItemBox>
-        {menu.map((item, index) => {
-          return <SidebarItems key={index} item={item} isOpen={isOpen} />;
-        })}
       </SidebarSection>
       <Main
         style={{

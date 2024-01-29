@@ -1,4 +1,4 @@
-import { FaTh} from "react-icons/fa";
+import { FaFlipboard, FaTh } from 'react-icons/fa';
 import { BiImageAdd } from "react-icons/bi";
 import { RiRoadMapFill } from 'react-icons/ri';
 import { CiViewBoard } from 'react-icons/ci';
@@ -22,7 +22,7 @@ const menu = [
     },
     {
         title: "Create New Board",
-        icon: <CiViewBoard />,
+        icon: <FaFlipboard />,
         path: "/newBoard",
     },
 ];
